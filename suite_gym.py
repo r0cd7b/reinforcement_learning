@@ -4,7 +4,6 @@ from __future__ import print_function
 
 from typing import Callable
 
-import gin
 import gymnasium as gym
 from tf_agents.environments import py_environment
 from tf_agents.environments import wrappers
@@ -14,7 +13,6 @@ import gym_wrapper
 TimeLimitWrapperType = Callable[[py_environment.PyEnvironment, int], py_environment.PyEnvironment]
 
 
-@gin.configurable
 def load(
         environment_name,
         discount=1.0,
@@ -34,7 +32,6 @@ def load(
     )
 
 
-@gin.configurable
 def wrap_env(
         gym_env,
         discount=1.0,

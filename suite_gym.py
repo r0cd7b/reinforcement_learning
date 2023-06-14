@@ -2,15 +2,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from typing import Callable
-
 import gymnasium as gym
-from tf_agents.environments import py_environment
-from tf_agents.environments import wrappers
 
 import gym_wrapper
-
-TimeLimitWrapperType = Callable[[py_environment.PyEnvironment, int], py_environment.PyEnvironment]
+import wrappers
 
 
 def load(

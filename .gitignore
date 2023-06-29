@@ -1,5 +1,6 @@
 .idea/
 .ipynb_checkpoints/
 __pycache__/
+18_reinforcement_learning.ipynb
 *.txt
 py.py
